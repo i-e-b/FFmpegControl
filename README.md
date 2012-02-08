@@ -11,3 +11,4 @@ TODO
 * Update to VS2010
 * Update libavcodec binaries from http://ffmpeg.zeranoe.com/builds/
 * Clean up library, allow selection of codecs etc.
+* Add C# interfaces
