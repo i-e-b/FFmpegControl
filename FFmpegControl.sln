@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MpegTS_ChunkEncoder", "MpegTS_ChunkEncoder\MpegTS_ChunkEncoder.vcproj", "{694524F2-1681-4A26-B88E-9184B2C212C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{694524F2-1681-4A26-B88E-9184B2C212C7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{694524F2-1681-4A26-B88E-9184B2C212C7}.Debug|Win32.Build.0 = Debug|Win32
+		{694524F2-1681-4A26-B88E-9184B2C212C7}.Release|Win32.ActiveCfg = Release|Win32
+		{694524F2-1681-4A26-B88E-9184B2C212C7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

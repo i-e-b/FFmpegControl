@@ -1,0 +1,14 @@
+prefix=/mingw
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavdevice
+Description: FFmpeg device handling library
+Version: 52.2.0
+Requires: 
+Requires.private: libavformat = 52.37.0
+Conflicts:
+Libs: -L${libdir} -lavdevice 
+Libs.private: -lz -lbz2 -lpthreadGC2 -lwsock32 -lm -lvfw32 -lfaad -lgsm -lmp3lame -lm -lopenjpeg -L/mingw/lib -lschroedinger-1.0 -loil-0.3 -lm -lspeex -ltheora -logg -lvorbisenc -lvorbis -logg -L/mingw/lib -lx264 -lpthreadGC2 -lwsock32 -lxvidcore -lws2_32 -lvfw32
+Cflags: -I${includedir}

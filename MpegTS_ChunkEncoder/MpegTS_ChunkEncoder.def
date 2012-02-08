@@ -1,0 +1,8 @@
+; MpegTS_ChunkEncoder.def : Declares the module parameters for the DLL.
+
+LIBRARY      "MpegTS_ChunkEncoder"
+
+EXPORTS
+    InitialiseEncoderJob
+    EncodeFrame
+    CloseEncoderJob
