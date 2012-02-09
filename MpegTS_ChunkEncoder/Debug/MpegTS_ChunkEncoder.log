@@ -1,0 +1,67 @@
+﻿Build started 09/02/2012 15:20:24.
+     1>Project "C:\Projects\Gits\FFmpegControl\MpegTS_ChunkEncoder\MpegTS_ChunkEncoder.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\MpegTS_ChunkEncoder.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\MpegTS_ChunkEncoder.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ColorSpaceConversion.cpp MpegTS_ChunkEncoder.cpp PES_TS.cpp
+         PES_TS.cpp
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(170): error C3861: 'UINT64_C': identifier not found
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(171): warning C4244: 'return' : conversion from 'int64_t' to 'int32_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(230): warning C4244: 'argument' : conversion from 'uint64_t' to 'uint32_t', possible loss of data
+         MpegTS_ChunkEncoder.cpp
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(170): error C3861: 'UINT64_C': identifier not found
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(171): warning C4244: 'return' : conversion from 'int64_t' to 'int32_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(230): warning C4244: 'argument' : conversion from 'uint64_t' to 'uint32_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(36): error C2065: 'CODEC_TYPE_AUDIO' : undeclared identifier
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(43): error C2065: 'SAMPLE_FMT_S16' : undeclared identifier
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(97): error C2065: 'CODEC_TYPE_VIDEO' : undeclared identifier
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(111): error C2039: 'bframebias' : is not a member of 'AVCodecContext'
+                 c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavcodec\avcodec.h(1225) : see declaration of 'AVCodecContext'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(116): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(121): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(141): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(153): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(157): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(161): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(165): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(169): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(173): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(177): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(286): warning C4244: 'initializing' : conversion from 'double' to 'uint64_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(297): warning C4244: 'initializing' : conversion from 'uint64_t' to 'long', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(298): warning C4244: 'initializing' : conversion from 'double' to 'long', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(303): warning C4244: 'initializing' : conversion from 'double' to 'long', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(311): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(316): warning C4244: '=' : conversion from 'double' to 'int64_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(318): warning C4244: '=' : conversion from 'double' to 'uint64_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(319): error C2065: 'PKT_FLAG_KEY' : undeclared identifier
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(332): warning C4244: 'argument' : conversion from 'int64_t' to 'long', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(343): warning C4244: '+=' : conversion from 'double' to 'uint64_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(363): warning C4244: 'initializing' : conversion from 'double' to 'int64_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(371): error C2065: 'FF_I_TYPE' : undeclared identifier
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(382): error C2065: 'PKT_FLAG_KEY' : undeclared identifier
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(393): warning C4244: 'argument' : conversion from 'int64_t' to 'long', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(445): error C3861: 'av_alloc_format_context': identifier not found
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(468): error C3861: 'av_set_parameters': identifier not found
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(540): error C2065: 'CODEC_TYPE_VIDEO' : undeclared identifier
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(550): error C2065: 'CODEC_TYPE_VIDEO' : undeclared identifier
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(595): error C3861: 'guess_format': identifier not found
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(662): error C3861: 'av_open_input_file': identifier not found
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(668): error C2065: 'CODEC_TYPE_VIDEO' : undeclared identifier
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(671): error C2065: 'CODEC_TYPE_AUDIO' : undeclared identifier
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(725): error C3861: 'url_ferror': identifier not found
+         ColorSpaceConversion.cpp
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(170): error C3861: 'UINT64_C': identifier not found
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(171): warning C4244: 'return' : conversion from 'int64_t' to 'int32_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(230): warning C4244: 'argument' : conversion from 'uint64_t' to 'uint32_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\colorspaceconversion.cpp(280): warning C4482: nonstandard extension used: enum 'PixelFormat' used in qualified name
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\colorspaceconversion.cpp(280): warning C4482: nonstandard extension used: enum 'PixelFormat' used in qualified name
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\colorspaceconversion.cpp(286): warning C4482: nonstandard extension used: enum 'PixelFormat' used in qualified name
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\colorspaceconversion.cpp(286): warning C4482: nonstandard extension used: enum 'PixelFormat' used in qualified name
+         Generating Code...
+     1>Done Building Project "C:\Projects\Gits\FFmpegControl\MpegTS_ChunkEncoder\MpegTS_ChunkEncoder.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.40

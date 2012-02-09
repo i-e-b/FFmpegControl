@@ -683,8 +683,8 @@ int DLL InitialiseDecoderJob(
 	jobSpec.AudioSampleRate = jobSpec.aCodecCtx->sample_rate;
 	jobSpec.AudioChannels = jobSpec.aCodecCtx->channels;
 	jobSpec.aCodec = avcodec_find_decoder(jobSpec.aCodecCtx->codec_id);
-	jobSpec.aCodecCtx->antialias_algo = FF_AA_FLOAT;
-	jobSpec.aCodecCtx->error_recognition = 0;
+	//jobSpec.aCodecCtx->antialias_algo = FF_AA_FLOAT;
+	//jobSpec.aCodecCtx->error_recognition = 0;
 
 	if (!jobSpec.aCodec) return 5; // unsupported codec
 	if (avcodec_open(jobSpec.aCodecCtx, jobSpec.aCodec) < 0) return 6;

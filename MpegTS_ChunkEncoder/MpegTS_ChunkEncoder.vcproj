@@ -130,7 +130,7 @@
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
 				WholeProgramOptimization="false"
-				AdditionalIncludeDirectories="C:\Clients\HCS_System\FFmpegControl\MpegTS_ChunkEncoder\lib;C:\Clients\HCS_System\FFmpegControl\MpegTS_ChunkEncoder\include"
+				AdditionalIncludeDirectories="$(SolutionDir)\MpegTS_ChunkEncoder\lib;$(SolutionDir)\MpegTS_ChunkEncoder\include"
 				PreprocessorDefinitions="WIN32;_WINDOWS;NDEBUG;_USRDLL"
 				ExceptionHandling="0"
 				RuntimeLibrary="2"
