@@ -61,6 +61,13 @@
 #define FF_ARRAY_ELEMS(a) (sizeof(a) / sizeof((a)[0]))
 #define FFALIGN(x, a) (((x)+(a)-1)&~((a)-1))
 
+// Fix for missing stdc constant
+#ifndef INT64_C
+#define INT64_C(c) (c ## LL)
+#define UINT64_C(c) (c ## ULL)
+#endif
+
+
 /* misc math functions */
 extern const uint8_t ff_log2_tab[256];
 

@@ -33,14 +33,14 @@ static AVStream *add_audio_stream(EncoderJob &jobSpec, AVFormatContext *oc, int 
 
 	c = st->codec;
 	c->codec_id = (CodecID)codec_id;
-	c->codec_type = CODEC_TYPE_AUDIO;
+	c->codec_type = AVMediaType::AVMEDIA_TYPE_VIDEO;
 
 	/* put sample parameters */
 	c->bit_rate = 96000;
 	c->flags2 = CODEC_FLAG2_LOCAL_HEADER;
 	c->flags = CODEC_FLAG_LOW_DELAY;
 	c->channels = 1;  // 1 for MONO, 2 for STEREO
-	c->sample_fmt = SAMPLE_FMT_S16;
+	c->sample_fmt = AVSampleFormat::AV_SAMPLE_FMT_S16;
 	c->sample_rate = 44100;
 
 	jobSpec.audio_outbuf_size = (FF_MIN_BUFFER_SIZE * 5);
@@ -94,7 +94,7 @@ static AVStream *add_video_stream(AVFormatContext *oc, int codec_id, EncoderJob 
 
 	c = st->codec;
 	c->codec_id = (CodecID)codec_id;
-	c->codec_type = CODEC_TYPE_VIDEO;
+	c->codec_type = AVMediaType::AVMEDIA_TYPE_VIDEO;
 
 #ifdef OLD_M2TS
 	oc->flags = AVFMT_FLAG_GENPTS | AVFMT_TS_DISCONT;
@@ -108,7 +108,7 @@ static AVStream *add_video_stream(AVFormatContext *oc, int codec_id, EncoderJob 
 	c->coder_type = 0;		// Baseline profile (Compatible with mobile devices)
 	//c->coder_type = 1;	// Main profile (Dedicated players & PCs)
 
-	c->bframebias = 0;
+	c->b_frame_strategy = 0;
 	c->me_subpel_quality = 6;
 
 	c->flags2 = CODEC_FLAG2_LOCAL_HEADER | CODEC_FLAG2_STRICT_GOP; // Insert headers all over the place, Force GOP boundaries to be regular.
@@ -316,7 +316,7 @@ static void write_audio_frame(EncoderJob &jobSpec, MediaFrame &frame, AVFormatCo
 			pkt.pts = pts_val;
 			pkt.dts = pkt.pts;
 			jobSpec.a_pts = pts_val;
-			pkt.flags |= PKT_FLAG_KEY;
+			pkt.flags |= AV_PKT_FLAG_KEY;
 			pts_val += pts_incr;
 
 			pkt.stream_index= st->index;
@@ -368,7 +368,7 @@ static void encode_video_frame(EncoderJob &jobSpec, MediaFrame &frame) {
 
 	// try to hint keyframes:
 	if (should_advance(jobSpec)) { // if we want to split the file,
-		jobSpec.picture->pict_type = FF_I_TYPE; // signal that we want a keyframe next.
+		jobSpec.picture->pict_type = AVPictureType::AV_PICTURE_TYPE_I; // signal that we want a keyframe next.
 	}
 
 	// encode the image
@@ -379,7 +379,7 @@ static void encode_video_frame(EncoderJob &jobSpec, MediaFrame &frame) {
 	pkt.dts = pts;
 
 	if(c->coded_frame->key_frame) {
-		pkt.flags |= PKT_FLAG_KEY;
+		pkt.flags |= AV_PKT_FLAG_KEY;
 		advance_fragment(jobSpec); // start new file if needed, so it will start with a key-frame
 	}
 
@@ -442,7 +442,7 @@ int start_up(EncoderJob &jobSpec) {
 
 	jobSpec.p = new Pests();
 
-	jobSpec.oc = av_alloc_format_context();
+	jobSpec.oc = avformat_alloc_context();
 	if (!jobSpec.oc) {
 		fprintf(stderr, "Memory error\n");
 		jobSpec.IsValid = false;
@@ -465,11 +465,11 @@ int start_up(EncoderJob &jobSpec) {
 		jobSpec.audio_st = add_audio_stream(jobSpec, jobSpec.oc, jobSpec.fmt->audio_codec);
 	}
 
-	if (av_set_parameters(jobSpec.oc, NULL) < 0) {
+	/*if (av_set_parameters(jobSpec.oc, NULL) < 0) {
 		fprintf(stderr, "Invalid output format parameters\n");
 			jobSpec.IsValid = false;
 			return 4;
-	}
+	}*/
 
 	/* now that all the parameters are set, we can open the audio and
 	video codecs and allocate the necessary encode buffers */
@@ -537,7 +537,7 @@ void advance_fragment(EncoderJob &jobSpec) {
 // Returns the size of buffer to pass to 'GetVideoCodecData()'
 int DLL GetVideoCodecDataSize(EncoderJob &jobSpec) {
 	for(unsigned int i = 0; i < jobSpec.oc->nb_streams; i++) {
-		if(jobSpec.oc->streams[i]->codec->codec_type == CODEC_TYPE_VIDEO) {
+		if(jobSpec.oc->streams[i]->codec->codec_type == AVMediaType::AVMEDIA_TYPE_VIDEO) {
 			return jobSpec.oc->streams[i]->codec->extradata_size;
 		}
 	}
@@ -547,7 +547,7 @@ int DLL GetVideoCodecDataSize(EncoderJob &jobSpec) {
 // Buffer must be initialised to at least the size specified by 'GetVideoCodecDataSize()'
 void DLL GetVideoCodecData(EncoderJob &jobSpec, char *buffer) {
 	for(unsigned int i = 0; i < jobSpec.oc->nb_streams; i++) {
-		if(jobSpec.oc->streams[i]->codec->codec_type == CODEC_TYPE_VIDEO) {
+		if(jobSpec.oc->streams[i]->codec->codec_type == AVMediaType::AVMEDIA_TYPE_VIDEO) {
 			memcpy(buffer, jobSpec.oc->streams[i]->codec->extradata, jobSpec.oc->streams[i]->codec->extradata_size);
 		}
 	}
@@ -592,7 +592,7 @@ int DLL InitialiseEncoderJob(
 
 	// Set-up FFmpeg:
 	av_register_all(); // Must be called from 32-bit code.
-	jobSpec.fmt = guess_format("mpegts", NULL, NULL);
+	jobSpec.fmt = av_guess_format("mpegts", NULL, NULL);
 	if (!jobSpec.fmt) {
 		fprintf(stderr, "Could not find suitable output format\n");
 		return 2;
@@ -658,17 +658,17 @@ int DLL InitialiseDecoderJob(
 {
 	jobSpec.IsValid = false;
 	av_register_all(); // Must be called from 32-bit code.
-
-	if (av_open_input_file(&jobSpec.pFormatCtx, Filepath, NULL, 0, NULL) != 0) return 1; // Couldn't open file
+	
+	if (avformat_open_input(&jobSpec.pFormatCtx, Filepath, NULL, NULL) != 0) return 1; // Couldn't open file
 	if (av_find_stream_info(jobSpec.pFormatCtx) < 0) return 2; // couldn't find stream information
 
 	int videoStream = -1;
 	int audioStream = -1;
 	for(unsigned int i = 0; i < jobSpec.pFormatCtx->nb_streams; i++) {
-		if(jobSpec.pFormatCtx->streams[i]->codec->codec_type == CODEC_TYPE_VIDEO && videoStream < 0) {
+		if(jobSpec.pFormatCtx->streams[i]->codec->codec_type == AVMediaType::AVMEDIA_TYPE_VIDEO && videoStream < 0) {
 			videoStream=i;
 		}
-		if(jobSpec.pFormatCtx->streams[i]->codec->codec_type == CODEC_TYPE_AUDIO && audioStream < 0) {
+		if(jobSpec.pFormatCtx->streams[i]->codec->codec_type == AVMediaType::AVMEDIA_TYPE_AUDIO && audioStream < 0) {
 			audioStream=i;
 		}
 	}
@@ -722,7 +722,7 @@ int DLL DecodeFrame(DecoderJob &jobSpec, MediaFrame &frame) {
 
 	if (av_read_frame(jobSpec.pFormatCtx, &packet) < 0 ) {
 		
-		if (url_ferror(jobSpec.pFormatCtx->pb)) {
+		if (jobSpec.pFormatCtx->pb && jobSpec.pFormatCtx->pb->error) {
 			printf("[EOF]");
 			av_free_packet(&packet);
 			return -1; // end of file
