@@ -21,7 +21,8 @@ static AVStream *add_audio_stream(EncoderJob &jobSpec, AVFormatContext *oc, int 
 	AVStream *st;
 
 	if (jobSpec.audio_st == NULL) {
-		st = av_new_stream(oc, 1);
+		st = avformat_new_stream(oc, NULL);
+		//st = av_new_stream(oc, 1);
 		if (!st) {
 			fprintf(stderr, "Could not alloc stream\n");
 			return NULL;
@@ -83,7 +84,8 @@ static AVStream *add_video_stream(AVFormatContext *oc, int codec_id, EncoderJob 
 	AVStream *st;
 
 	if (jobSpec.video_st == NULL) {
-		st = av_new_stream(oc, 0);
+		st = avformat_new_stream(oc, NULL);
+		//st = av_new_stream(oc, 0);
 		if (!st) {
 			fprintf(stderr, "Could not alloc stream\n");
 			return NULL;
@@ -660,7 +662,7 @@ int DLL InitialiseDecoderJob(
 	av_register_all(); // Must be called from 32-bit code.
 	
 	if (avformat_open_input(&jobSpec.pFormatCtx, Filepath, NULL, NULL) != 0) return 1; // Couldn't open file
-	if (av_find_stream_info(jobSpec.pFormatCtx) < 0) return 2; // couldn't find stream information
+	if (avformat_find_stream_info(jobSpec.pFormatCtx, NULL) < 0) return 2; // couldn't find stream information
 
 	int videoStream = -1;
 	int audioStream = -1;

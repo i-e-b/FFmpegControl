@@ -1,0 +1,78 @@
+﻿Build started 09/02/2012 17:09:37.
+     1>Project "C:\Projects\Gits\FFmpegControl\MpegTS_ChunkEncoder\MpegTS_ChunkEncoder.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Release\MpegTS_ChunkEncoder.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Release\MpegTS_ChunkEncoder.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Projects\Gits\FFmpegControl\\MpegTS_ChunkEncoder\lib /IC:\Projects\Gits\FFmpegControl\\MpegTS_ChunkEncoder\include /Zi /nologo /W3 /WX- /O2 /Oi /Ot /Oy /D WIN32 /D _WINDOWS /D NDEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /MD /Zp16 /GS- /Gy- /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\MpegTS_ChunkEncoder.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Projects\Gits\FFmpegControl\\MpegTS_ChunkEncoder\lib /IC:\Projects\Gits\FFmpegControl\\MpegTS_ChunkEncoder\include /Zi /nologo /W3 /WX- /O2 /Oi /Ot /Oy /D WIN32 /D _WINDOWS /D NDEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /MD /Zp16 /GS- /Gy- /arch:SSE2 /fp:fast /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\MpegTS_ChunkEncoder.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ColorSpaceConversion.cpp MpegTS_ChunkEncoder.cpp PES_TS.cpp
+         ColorSpaceConversion.cpp
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xlocale(323): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(178): warning C4244: 'return' : conversion from 'int64_t' to 'int32_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(237): warning C4244: 'argument' : conversion from 'uint64_t' to 'uint32_t', possible loss of data
+     1>ColorSpaceConversion.cpp(280): warning C4482: nonstandard extension used: enum 'PixelFormat' used in qualified name
+     1>ColorSpaceConversion.cpp(280): warning C4482: nonstandard extension used: enum 'PixelFormat' used in qualified name
+     1>ColorSpaceConversion.cpp(286): warning C4482: nonstandard extension used: enum 'PixelFormat' used in qualified name
+     1>ColorSpaceConversion.cpp(286): warning C4482: nonstandard extension used: enum 'PixelFormat' used in qualified name
+         MpegTS_ChunkEncoder.cpp
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xlocale(323): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(178): warning C4244: 'return' : conversion from 'int64_t' to 'int32_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(237): warning C4244: 'argument' : conversion from 'uint64_t' to 'uint32_t', possible loss of data
+     1>MpegTS_ChunkEncoder.cpp(37): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
+     1>MpegTS_ChunkEncoder.cpp(44): warning C4482: nonstandard extension used: enum 'AVSampleFormat' used in qualified name
+     1>MpegTS_ChunkEncoder.cpp(99): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
+     1>MpegTS_ChunkEncoder.cpp(118): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>MpegTS_ChunkEncoder.cpp(143): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>MpegTS_ChunkEncoder.cpp(288): warning C4244: 'initializing' : conversion from 'double' to 'uint64_t', possible loss of data
+     1>MpegTS_ChunkEncoder.cpp(299): warning C4244: 'initializing' : conversion from 'uint64_t' to 'long', possible loss of data
+     1>MpegTS_ChunkEncoder.cpp(300): warning C4244: 'initializing' : conversion from 'double' to 'long', possible loss of data
+     1>MpegTS_ChunkEncoder.cpp(305): warning C4244: 'initializing' : conversion from 'double' to 'long', possible loss of data
+     1>MpegTS_ChunkEncoder.cpp(313): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>MpegTS_ChunkEncoder.cpp(318): warning C4244: '=' : conversion from 'double' to 'int64_t', possible loss of data
+     1>MpegTS_ChunkEncoder.cpp(320): warning C4244: '=' : conversion from 'double' to 'uint64_t', possible loss of data
+     1>MpegTS_ChunkEncoder.cpp(334): warning C4244: 'argument' : conversion from 'int64_t' to 'long', possible loss of data
+     1>MpegTS_ChunkEncoder.cpp(345): warning C4244: '+=' : conversion from 'double' to 'uint64_t', possible loss of data
+     1>MpegTS_ChunkEncoder.cpp(365): warning C4244: 'initializing' : conversion from 'double' to 'int64_t', possible loss of data
+     1>MpegTS_ChunkEncoder.cpp(373): warning C4482: nonstandard extension used: enum 'AVPictureType' used in qualified name
+     1>MpegTS_ChunkEncoder.cpp(395): warning C4244: 'argument' : conversion from 'int64_t' to 'long', possible loss of data
+     1>MpegTS_ChunkEncoder.cpp(454): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>MpegTS_ChunkEncoder.cpp(519): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>MpegTS_ChunkEncoder.cpp(542): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
+     1>MpegTS_ChunkEncoder.cpp(552): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
+     1>MpegTS_ChunkEncoder.cpp(574): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\string.h(105) : see declaration of 'strcpy'
+     1>MpegTS_ChunkEncoder.cpp(670): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
+     1>MpegTS_ChunkEncoder.cpp(673): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
+         PES_TS.cpp
+     1>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\xlocale(323): warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(178): warning C4244: 'return' : conversion from 'int64_t' to 'int32_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(237): warning C4244: 'argument' : conversion from 'uint64_t' to 'uint32_t', possible loss of data
+         Generating Code...
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Projects\Gits\FFmpegControl\Release\MpegTS_ChunkEncoder.dll" /INCREMENTAL:NO /NOLOGO /DEF:".\MpegTS_ChunkEncoder.def" /MANIFEST /ManifestFile:"Release\MpegTS_ChunkEncoder.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Projects\Gits\FFmpegControl\Release\MpegTS_ChunkEncoder.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Projects\Gits\FFmpegControl\Release\MpegTS_ChunkEncoder.lib" /MACHINE:X86 /DLL Release\ColorSpaceConversion.obj
+         Release\MpegTS_ChunkEncoder.obj
+         Release\PES_TS.obj
+         Release\stdafx.obj
+         lib\avcodec.lib
+         lib\avdevice.lib
+         lib\avformat.lib
+         lib\avutil.lib
+         lib\fwBase.lib
+         lib\fwImage.lib
+            Creating library C:\Projects\Gits\FFmpegControl\Release\MpegTS_ChunkEncoder.lib and object C:\Projects\Gits\FFmpegControl\Release\MpegTS_ChunkEncoder.exp
+         LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+         MpegTS_ChunkEncoder.vcxproj -> C:\Projects\Gits\FFmpegControl\Release\MpegTS_ChunkEncoder.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Projects\Gits\FFmpegControl\Release\MpegTS_ChunkEncoder.dll;#2" /manifest Release\MpegTS_ChunkEncoder.dll.intermediate.manifest "c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Release\MpegTS_ChunkEncoder.unsuccessfulbuild".
+         Touching "Release\MpegTS_ChunkEncoder.lastbuildstate".
+     1>Done Building Project "C:\Projects\Gits\FFmpegControl\MpegTS_ChunkEncoder\MpegTS_ChunkEncoder.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.12

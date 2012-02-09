@@ -10,30 +10,33 @@
     <RecentFiles>
       <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:avformat.h" caret="0" fromTop="0" />
       <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:common.h" caret="1713" fromTop="31" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="21542" fromTop="15" />
       <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.h" caret="789" fromTop="28" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:ColorSpaceConversion.cpp" caret="0" fromTop="0" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="19740" fromTop="28" />
     </RecentFiles>
     <RecentEdits>
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="983" fromTop="33" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="766" fromTop="26" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="2128" fromTop="36" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="2765" fromTop="32" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="8954" fromTop="24" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="10374" fromTop="34" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="10675" fromTop="39" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="20609" fromTop="50" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="20040" fromTop="23" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="19559" fromTop="38" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="15648" fromTop="30" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="16032" fromTop="40" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="12295" fromTop="28" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="13273" fromTop="34" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="13117" fromTop="30" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="17358" fromTop="28" />
-      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="21935" fromTop="28" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="1024" fromTop="33" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="807" fromTop="26" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="2210" fromTop="36" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="2847" fromTop="32" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="9036" fromTop="24" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="10456" fromTop="34" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="10757" fromTop="39" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="20703" fromTop="50" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="20134" fromTop="23" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="15730" fromTop="30" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="16114" fromTop="40" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="12377" fromTop="28" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="13355" fromTop="34" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="13199" fromTop="30" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="17440" fromTop="28" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="22029" fromTop="28" />
       <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:common.h" caret="2095" fromTop="41" />
       <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:common.h" caret="2094" fromTop="44" />
       <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:common.h" caret="2007" fromTop="39" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="513" fromTop="20" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="1954" fromTop="47" />
+      <File id="694524F2-1681-4A26-B88E-9184B2C212C7/f:MpegTS_ChunkEncoder.cpp" caret="19740" fromTop="28" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

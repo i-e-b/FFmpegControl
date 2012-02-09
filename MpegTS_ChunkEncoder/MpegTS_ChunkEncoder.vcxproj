@@ -122,7 +122,8 @@
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(TargetPath)" "$(SolutionDir)\..\HCS_Encoder\HCS_Encoder\"</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

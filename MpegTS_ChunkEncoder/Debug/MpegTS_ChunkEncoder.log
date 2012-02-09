@@ -1,9 +1,12 @@
-﻿Build started 09/02/2012 16:22:28.
-     1>Project "C:\Projects\Gits\FFmpegControl\MpegTS_ChunkEncoder\MpegTS_ChunkEncoder.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
+﻿Build started 09/02/2012 17:02:46.
+     1>Project "C:\Projects\Gits\FFmpegControl\MpegTS_ChunkEncoder\MpegTS_ChunkEncoder.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\MpegTS_ChunkEncoder.lastbuildstate".
+       InitializeBuildStatus:
          Touching "Debug\MpegTS_ChunkEncoder.unsuccessfulbuild".
        ClCompile:
-         All outputs are up-to-date.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\MpegTS_ChunkEncoder.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\MpegTS_ChunkEncoder.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ColorSpaceConversion.cpp MpegTS_ChunkEncoder.cpp PES_TS.cpp
          PES_TS.cpp
      1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(178): warning C4244: 'return' : conversion from 'int64_t' to 'int32_t', possible loss of data
@@ -11,41 +14,41 @@
          MpegTS_ChunkEncoder.cpp
      1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(178): warning C4244: 'return' : conversion from 'int64_t' to 'int32_t', possible loss of data
      1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(237): warning C4244: 'argument' : conversion from 'uint64_t' to 'uint32_t', possible loss of data
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(36): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(43): warning C4482: nonstandard extension used: enum 'AVSampleFormat' used in qualified name
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(97): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(116): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(121): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(141): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(153): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(157): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(161): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(165): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(169): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(173): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(177): warning C4305: '=' : truncation from 'double' to 'float'
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(286): warning C4244: 'initializing' : conversion from 'double' to 'uint64_t', possible loss of data
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(297): warning C4244: 'initializing' : conversion from 'uint64_t' to 'long', possible loss of data
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(298): warning C4244: 'initializing' : conversion from 'double' to 'long', possible loss of data
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(303): warning C4244: 'initializing' : conversion from 'double' to 'long', possible loss of data
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(311): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(316): warning C4244: '=' : conversion from 'double' to 'int64_t', possible loss of data
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(318): warning C4244: '=' : conversion from 'double' to 'uint64_t', possible loss of data
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(332): warning C4244: 'argument' : conversion from 'int64_t' to 'long', possible loss of data
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(343): warning C4244: '+=' : conversion from 'double' to 'uint64_t', possible loss of data
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(363): warning C4244: 'initializing' : conversion from 'double' to 'int64_t', possible loss of data
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(371): warning C4482: nonstandard extension used: enum 'AVPictureType' used in qualified name
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(393): warning C4244: 'argument' : conversion from 'int64_t' to 'long', possible loss of data
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(452): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(37): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(44): warning C4482: nonstandard extension used: enum 'AVSampleFormat' used in qualified name
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(98): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(117): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(122): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(142): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(154): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(158): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(162): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(166): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(170): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(174): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(178): warning C4305: '=' : truncation from 'double' to 'float'
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(287): warning C4244: 'initializing' : conversion from 'double' to 'uint64_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(298): warning C4244: 'initializing' : conversion from 'uint64_t' to 'long', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(299): warning C4244: 'initializing' : conversion from 'double' to 'long', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(304): warning C4244: 'initializing' : conversion from 'double' to 'long', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(312): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(317): warning C4244: '=' : conversion from 'double' to 'int64_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(319): warning C4244: '=' : conversion from 'double' to 'uint64_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(333): warning C4244: 'argument' : conversion from 'int64_t' to 'long', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(344): warning C4244: '+=' : conversion from 'double' to 'uint64_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(364): warning C4244: 'initializing' : conversion from 'double' to 'int64_t', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(372): warning C4482: nonstandard extension used: enum 'AVPictureType' used in qualified name
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(394): warning C4244: 'argument' : conversion from 'int64_t' to 'long', possible loss of data
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(453): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(517): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(518): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(540): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(550): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(572): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(541): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(551): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(573): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(668): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
-     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(671): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(669): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
+     1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\mpegts_chunkencoder.cpp(672): warning C4482: nonstandard extension used: enum 'AVMediaType' used in qualified name
          ColorSpaceConversion.cpp
      1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(178): warning C4244: 'return' : conversion from 'int64_t' to 'int32_t', possible loss of data
      1>c:\projects\gits\ffmpegcontrol\mpegts_chunkencoder\include\libavutil\common.h(237): warning C4244: 'argument' : conversion from 'uint64_t' to 'uint32_t', possible loss of data
@@ -69,13 +72,13 @@
          lib\fwBase.lib
          lib\fwImage.lib
             Creating library C:\Projects\Gits\FFmpegControl\Debug\MpegTS_ChunkEncoder.lib and object C:\Projects\Gits\FFmpegControl\Debug\MpegTS_ChunkEncoder.exp
-     1>MpegTS_ChunkEncoder.obj : error LNK2019: unresolved external symbol _av_new_stream referenced in function "struct AVStream * __cdecl add_audio_stream(struct EncoderJob &,struct AVFormatContext *,int)" (?add_audio_stream@@YAPAUAVStream@@AAUEncoderJob@@PAUAVFormatContext@@H@Z)
+     1>MpegTS_ChunkEncoder.obj : error LNK2019: unresolved external symbol _av_new_stream referenced in function "struct AVStream * __cdecl add_video_stream(struct AVFormatContext *,int,struct EncoderJob &)" (?add_video_stream@@YAPAUAVStream@@PAUAVFormatContext@@HAAUEncoderJob@@@Z)
      1>MpegTS_ChunkEncoder.obj : error LNK2019: unresolved external symbol _av_find_stream_info referenced in function _InitialiseDecoderJob
      1>MpegTS_ChunkEncoder.obj : error LNK2019: unresolved external symbol __imp___CrtDbgReportW referenced in function "public: char const & __thiscall std::_String_const_iterator<char,struct std::char_traits<char>,class std::allocator<char> >::operator*(void)const " (??D?$_String_const_iterator@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEABDXZ)
      1>PES_TS.obj : error LNK2001: unresolved external symbol __imp___CrtDbgReportW
      1>C:\Projects\Gits\FFmpegControl\Debug\MpegTS_ChunkEncoder.dll : fatal error LNK1120: 3 unresolved externals
-     1>Done Building Project "C:\Projects\Gits\FFmpegControl\MpegTS_ChunkEncoder\MpegTS_ChunkEncoder.vcxproj" (build target(s)) -- FAILED.
+     1>Done Building Project "C:\Projects\Gits\FFmpegControl\MpegTS_ChunkEncoder\MpegTS_ChunkEncoder.vcxproj" (rebuild target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:02.95
+Time Elapsed 00:00:02.59
