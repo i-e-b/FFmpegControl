@@ -8,7 +8,7 @@ Includes FrameWave for highquality image scaling, and a custom scaling algorithm
 
 TODO
 ----
-* Update to VS2010
-* Update libavcodec binaries from http://ffmpeg.zeranoe.com/builds/
+* ~~Update to VS2010~~
+* ~~Update libavcodec binaries from http://ffmpeg.zeranoe.com/builds/~~
 * Clean up library, allow selection of codecs etc.
 * Add C# interfaces
