@@ -12,6 +12,7 @@ extern "C" {
 #define STREAM_PIX_FMT PIX_FMT_YUV420P
 
 // Which output muxer to use?
+//#define OLD_M2TS
 #define NEW_M2TS 
 #undef OLD_M2TS
 

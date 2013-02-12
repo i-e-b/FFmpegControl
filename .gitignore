@@ -2,3 +2,6 @@ obj
 bin
 *.user
 *.suo
+Debug
+Release
+ipch

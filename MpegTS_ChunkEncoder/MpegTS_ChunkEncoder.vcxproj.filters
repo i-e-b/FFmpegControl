@@ -21,10 +21,10 @@
     <ClCompile Include="MpegTS_ChunkEncoder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PES_TS.cpp">
+    <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="PES_TS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
